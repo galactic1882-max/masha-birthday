@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#25211f">
+  <meta name="description" content="A private little birthday book for Masha.">
+  <title>A Little Book for Masha</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232b2420'/%3E%3Cpath d='M15 16c8-3 14-1 17 4 3-5 9-7 17-4v34c-8-2-14 0-17 4-3-4-9-6-17-4z' fill='%23e6ba71'/%3E%3Cpath d='M32 20v34' stroke='%232b2420' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#book">Skip to the book</a>
+
+  <main class="experience">
+    <section class="cover" id="cover" aria-labelledby="cover-title">
+      <div class="cover__cloth" aria-hidden="true"></div>
+      <div class="cover__frame">
+        <p class="eyebrow">October 9 · 2026</p>
+        <h1 id="cover-title">A Little Book<br><em>for Masha</em></h1>
+        <div class="cover__ornament" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+        <p class="cover__note">A few pages about books, music, coffee, journeys, Bon Bon—and one very good friend.</p>
+        <button class="language-toggle language-toggle-cover" type="button" data-language-toggle aria-label="Change language. Current language: English">
+          <span aria-hidden="true">文</span><span class="language-code">EN</span>
+        </button>
+        <button class="open-button" id="open-book" type="button">Open the book</button>
+      </div>
+    </section>
+
+    <section class="reader" id="book" aria-label="Birthday book" tabindex="-1" hidden>
+      <div class="reader__topbar">
+        <button class="text-button" id="contents-button" type="button" aria-haspopup="dialog">Contents</button>
+        <p class="reader__title">A Little Book for Masha</p>
+        <div class="reader-actions">
+          <button class="language-toggle language-toggle-reader" type="button" data-language-toggle aria-label="Change language. Current language: English">
+            <span aria-hidden="true">文</span><span class="language-code">EN</span>
+          </button>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+            <span aria-hidden="true">☾</span><span class="theme-label">Night reading</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="book-shell">
+        <div class="book" aria-live="polite">
+          <article class="book-page page-intro" data-page="0" aria-label="Page 1">
+            <div class="page-inner">
+              <p class="chapter-kicker">A small beginning</p>
+              <h2>This year,<br>it had to be a book.</h2>
+              <p class="lead">Last year, a video. This year, something with pages—because that feels much more like you.</p>
+              <p>Not a biography. Not a dramatic speech. Just a collection of things I remember when I think of Masha.</p>
+              <p class="margin-note">Best opened with coffee.<br>Tea is also officially allowed.</p>
+              <span class="page-number">1</span>
+            </div>
+          </article>
+
+          <article class="book-page page-reader" data-page="1" aria-label="Page 2">
+            <div class="page-inner photo-page">
+              <figure class="editorial-photo">
+                <img src="assets/images/masha-bookshelf.png" alt="Masha choosing a book from a bookshelf" width="772" height="781">
+              </figure>
+              <div class="photo-caption">
+                <p class="chapter-kicker">Chapter one</p>
+                <h2>The reader</h2>
+                <p>Some people own books. You notice covers and bindings, love the smell of new pages, and casually plan a future home with at least <strong>1,000</strong> of them.</p>
+                <p class="scribble">A completely reasonable minimum.</p>
+              </div>
+              <span class="page-number">2</span>
+            </div>
+          </article>
+
+          <article class="book-page page-library" data-page="2" aria-label="Page 3">
+            <div class="page-inner">
+              <p class="chapter-kicker">The shelves keep growing</p>
+              <h2>You read for the trace a story leaves behind.</h2>
+              <p class="lead">Detective, fantasy, nonfiction—it can be anything, as long as it leaves a deep mark.</p>
+              <div class="title-index" aria-label="Books and writers Masha has talked about">
+                <span>Virginia Woolf</span><span>Edgar Allan Poe</span><span>Sylvia Plath</span><span>Toni Morrison</span><span>George Orwell</span>
+              </div>
+              <aside class="rare-note"><strong>Shelf security notice</strong><br>One rare black book may apparently be valuable enough to get you robbed.</aside>
+              <span class="page-number">3</span>
+            </div>
+          </article>
+
+          <article class="book-page page-music" data-page="3" aria-label="Page 4">
+            <div class="page-inner">
+              <p class="chapter-kicker">Side A · play loudly</p>
+              <h2>A soundtrack with no ending</h2>
+              <p>For you, songs are never just background. They are weather, memories, medicine, and entire little worlds.</p>
+              <div class="record-list" aria-label="A few recurring names in Masha's music conversations">
+                <div><span>01</span><strong>Кино</strong><small>Russian rock, obviously.</small></div>
+                <div><span>02</span><strong>The Cure</strong><small>With appropriate devotion.</small></div>
+                <div><span>03</span><strong>Jeff Buckley</strong><small>A voice like a warm hug.</small></div>
+                <div><span>04</span><strong>Ария</strong><small>“Like a bandage over a wound.”</small></div>
+                <div><span>05</span><strong>Creedence Clearwater Revival</strong><small>A road-trip constant.</small></div>
+              </div>
+              <p class="music-footnote">Favourite songs may change again in two weeks. This is part of the system.</p>
+              <div class="spotify-player-wrap">
+                <iframe class="spotify-player" title="Spotify player for the playlist my religion" src="https://open.spotify.com/embed/playlist/7CUNsq0zxzNN4PMPBysgEZ?utm_source=generator&amp;theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <p>Internet connection required · press Play to begin</p>
+              </div>
+              <a class="external-link" href="https://open.spotify.com/playlist/7CUNsq0zxzNN4PMPBysgEZ?si=d4843c4065434b0e" target="_blank" rel="noreferrer">Open “my religion” on Spotify <span>↗</span></a>
+              <span class="page-number">4</span>
+            </div>
+          </article>
+
+          <article class="book-page page-coffee" data-page="4" aria-label="Page 5">
+            <div class="page-inner">
+              <p class="chapter-kicker">An important daily question</p>
+              <h2>Coffee<br><span>or</span> tea?</h2>
+              <p class="lead">You wanted coffee. Someone mentioned tea. Suddenly the entire decision had to be reconsidered.</p>
+              <div class="choice-notes">
+                <p><strong>Coffee:</strong> for walks, mornings, bookshop plans and the photos that somehow fill your camera roll.</p>
+                <p><strong>Tea:</strong> chamomile, music, one deep breath, and the firm belief that everything will be okay.</p>
+              </div>
+              <p class="scribble">Final ruling: both.</p>
+              <span class="page-number">5</span>
+            </div>
+          </article>
+
+          <article class="book-page page-cat" data-page="5" aria-label="Page 6">
+            <div class="page-inner">
+              <p class="chapter-kicker">A very important interruption</p>
+              <button class="cat-easter-egg" id="cat-easter-egg" type="button" aria-label="Ask the cat what it thinks">
+                <img src="assets/images/bon-bon.png" loading="lazy" alt="Bon Bon looking directly at the camera" width="861" height="1071">
+              </button>
+              <h2>Bon Bon has reviewed this chapter.</h2>
+              <p class="lead">With that face, there was never any doubt about who truly supervises the books, the coffee breaks, and everything else.</p>
+              <p class="cat-reaction" id="cat-reaction" aria-live="polite">Tap the chief inspector for an official verdict.</p>
+              <span class="page-number">6 · approved by Bon Bon</span>
+            </div>
+          </article>
+
+          <article class="book-page page-curiosity" data-page="6" aria-label="Page 7">
+            <div class="page-inner">
+              <p class="chapter-kicker">Several tabs open at once</p>
+              <h2>The way your mind works</h2>
+              <div class="quality-grid">
+                <section><strong>Curious</strong><p>You do not just finish a story. You take it apart, connect it to the world, and send a page of thoughts because one idea would not leave you alone.</p></section>
+                <section><strong>Observant</strong><p>You notice the cover, the light through the trees, a voice in a song, the one detail everyone else missed.</p></section>
+                <section><strong>Honest</strong><p>If something matters, you say why. If you are unsure, you keep thinking. If the translation is ridiculous, you laugh first.</p></section>
+                <section><strong>Creative</strong><p>Paintings at midnight. Photos by the hundreds. Book discussions with actual chapter plans.</p></section>
+              </div>
+              <p class="language-note">Russian · English · Spanish · and one accidental Portuguese lesson.</p>
+              <span class="page-number">7</span>
+            </div>
+          </article>
+
+          <article class="book-page page-postcards" data-page="7" aria-label="Page 8">
+            <div class="page-inner">
+              <p class="chapter-kicker">Postcards from your world</p>
+              <h2>You notice places properly.</h2>
+              <div class="postcard-stack">
+                <figure class="postcard postcard-main">
+                  <img src="assets/images/masha-st-isaac.png" loading="lazy" alt="Masha looking up at St. Isaac's Cathedral" width="778" height="783">
+                  <figcaption>St. Isaac’s Cathedral — “my love,” with no further explanation required.</figcaption>
+                </figure>
+                <figure class="postcard postcard-small">
+                  <img src="assets/images/masha-fountain.png" loading="lazy" alt="Masha beside a fountain in a green park" width="767" height="788">
+                  <figcaption>Rain, fountains, trees, and one quiet frame.</figcaption>
+                </figure>
+              </div>
+              <span class="page-number">8</span>
+            </div>
+          </article>
+
+          <article class="book-page page-travel page-travel-city" data-page="8" aria-label="Page 9">
+            <div class="page-inner">
+              <p class="chapter-kicker">Russia, collected in frames · I</p>
+              <h2>The joy of going somewhere.</h2>
+              <p class="travel-intro">You travel with your eyes open: a dome against a blue sky, old walls, a fountain, three pretzels held up like trophies.</p>
+              <div class="travel-grid" aria-label="A collage of Masha’s travel photographs">
+                <figure class="travel-shot travel-shot-tall"><img src="assets/images/travel-cathedral-sky.png" loading="lazy" alt="A domed cathedral beneath a bright blue sky" width="873" height="1040"></figure>
+                <figure class="travel-shot"><img src="assets/images/travel-pretzels.png" loading="lazy" alt="Three large pretzels held in front of an old street" width="842" height="1021"></figure>
+                <figure class="travel-shot"><img src="assets/images/travel-brick-tower.png" loading="lazy" alt="A brick tower and wall on a green hillside" width="866" height="1030"></figure>
+                <figure class="travel-shot travel-shot-wide"><img src="assets/images/travel-sunset-park.png" loading="lazy" alt="Sunset light passing through trees in a green park" width="842" height="1025"></figure>
+              </div>
+              <span class="page-number">9</span>
+            </div>
+          </article>
+
+          <article class="book-page page-travel page-travel-nature" data-page="9" aria-label="Page 10">
+            <div class="page-inner">
+              <p class="chapter-kicker">Russia, collected in frames · II</p>
+              <h2>Every season tells a different story.</h2>
+              <p class="travel-intro">Snow under streetlights, impossible winter blue, forest paths and wooden cabins—places become memories because you noticed them.</p>
+              <div class="travel-grid travel-grid-nature" aria-label="A collage of landscapes from Masha’s travels">
+                <figure class="travel-shot"><img src="assets/images/travel-forest-snow.png" loading="lazy" alt="A dark forest with patches of late snow" width="847" height="1038"></figure>
+                <figure class="travel-shot travel-shot-wide"><img src="assets/images/travel-snow-street.png" loading="lazy" alt="A quiet snowy street glowing under evening lights" width="1163" height="1028"></figure>
+                <figure class="travel-shot"><img src="assets/images/travel-winter-blue.png" loading="lazy" alt="Frost-covered trees beneath a vivid blue winter sky" width="867" height="1050"></figure>
+                <figure class="travel-shot travel-shot-wide"><img src="assets/images/travel-cabin-woods.png" loading="lazy" alt="Wooden cabins among tall sunlit trees" width="1587" height="1013"></figure>
+              </div>
+              <p class="scribble travel-note">May the map keep growing.</p>
+              <span class="page-number">10</span>
+            </div>
+          </article>
+
+          <article class="book-page page-sea" data-page="10" aria-label="Page 11">
+            <div class="page-inner photo-page">
+              <figure class="editorial-photo">
+                <img src="assets/images/masha-sea.png" loading="lazy" alt="Masha looking out over the sea" width="778" height="775">
+              </figure>
+              <div class="sea-copy">
+                <p class="chapter-kicker">A quiet page</p>
+                <h2>Some places make the noise smaller.</h2>
+                <p>You once said the sea calms you because it holds so many memories. So this page does not need much more.</p>
+              </div>
+              <span class="page-number">11</span>
+            </div>
+          </article>
+
+          <article class="book-page page-distance" data-page="11" aria-label="Page 12">
+            <div class="page-inner">
+              <p class="chapter-kicker">One timezone → another</p>
+              <h2>A friendship with inconvenient geography</h2>
+              <div class="distance-line" aria-hidden="true"><span>Your morning</span><i></i><b>✦</b><i></i><span>My evening</span></div>
+              <p class="lead">Thousands of kilometres. Different clocks. Messages that begin with “good morning” and end with “good night” for the other person.</p>
+              <p>Apparently, distance is excellent at complicating birthday timing and terrible at stopping a friendship.</p>
+              <aside class="tiny-stat">1 chat · two clocks · 563 songs in the playlist at last count</aside>
+              <span class="page-number">12</span>
+            </div>
+          </article>
+
+          <article class="book-page page-kindness" data-page="12" aria-label="Page 13">
+            <div class="page-inner">
+              <p class="chapter-kicker">The part I wanted to say clearly</p>
+              <h2>You show up.</h2>
+              <blockquote>“Music. Chamomile tea. A deep breath. Everything will be okay.”</blockquote>
+              <p class="lead">When exams piled up, you believed in me. When I needed to talk, you listened. You said “I’m here” so naturally that it never sounded like a performance.</p>
+              <p>I remember that. I appreciate your honesty, your patience, and the way you care seriously—without forgetting how to laugh five minutes later.</p>
+              <p class="scribble">Thank you for being a very good friend.</p>
+              <span class="page-number">13</span>
+            </div>
+          </article>
+
+          <article class="book-page page-wishes" data-page="13" aria-label="Page 14">
+            <div class="page-inner">
+              <p class="chapter-kicker">For the next chapter</p>
+              <h2>I hope this year brings you…</h2>
+              <ul class="wish-list">
+                <li><span>01</span>books that leave the kind of mark you look for,</li>
+                <li><span>02</span>more shelves before the current ones surrender,</li>
+                <li><span>03</span>good coffee, quiet autumn walks and music that still surprises you,</li>
+                <li><span>04</span>places that make you stop and look up,</li>
+                <li><span>05</span>confidence in every language you decide to learn,</li>
+                <li><span>06</span>and people who listen to you as carefully as you listen to them.</li>
+              </ul>
+              <span class="page-number">14</span>
+            </div>
+          </article>
+
+          <article class="book-page page-final" data-page="14" aria-label="Page 15">
+            <div class="page-inner photo-page">
+              <figure class="editorial-photo final-photo">
+                <img src="assets/images/masha-portrait.png" loading="lazy" alt="A portrait of Masha" width="782" height="791">
+              </figure>
+              <div class="final-copy">
+                <p class="chapter-kicker">October 9</p>
+                <p class="final-note">One last page</p>
+                <h2>Happy Birthday, Masha.</h2>
+                <p>I’m really glad we met.</p>
+                <p>Thank you for the conversations, the support, the recommendations, the ridiculous translations, and all the small things that make talking to you feel unmistakably like talking to you.</p>
+                <p class="signature">— Ever<br><small>October 2026</small></p>
+                <button class="final-surprise" id="final-surprise" type="button">One tiny birthday surprise</button>
+                <p class="surprise-message" id="surprise-message" aria-live="polite" hidden>May your next year contain excellent books, kind people, calm days—and absolutely enough coffee. ✦</p>
+              </div>
+              <span class="page-number">15 · the end (for now)</span>
+            </div>
+          </article>
+        </div>
+        <button class="bookmark" id="bookmark" type="button" aria-label="Open the hidden bookmark">M</button>
+        <p class="bookmark-note" id="bookmark-note" aria-live="polite" hidden>Future-house requirement: at least 1,000 books. No negotiations.</p>
+      </div>
+
+      <nav class="reader__controls" aria-label="Page navigation">
+        <button class="nav-button" id="previous-page" type="button" aria-label="Previous page" disabled>←</button>
+        <p class="page-status" id="page-status">1–2 / 2</p>
+        <button class="nav-button" id="next-page" type="button" aria-label="Next page" disabled>→</button>
+      </nav>
+    </section>
+  </main>
+
+  <div class="contents-dialog" id="contents-dialog" role="dialog" aria-modal="true" aria-labelledby="contents-title" hidden>
+    <div class="contents-card">
+      <button class="dialog-close" id="close-contents" type="button" aria-label="Close contents">×</button>
+      <p class="eyebrow">Inside this little book</p>
+      <h2 id="contents-title">Contents</h2>
+      <ol class="contents-list">
+        <li><button type="button" data-jump="0"><span>01</span>This year, a book</button></li>
+        <li><button type="button" data-jump="1"><span>02</span>The reader</button></li>
+        <li><button type="button" data-jump="3"><span>04</span>The soundtrack</button></li>
+        <li><button type="button" data-jump="4"><span>05</span>Coffee or tea?</button></li>
+        <li><button type="button" data-jump="6"><span>07</span>The way your mind works</button></li>
+        <li><button type="button" data-jump="7"><span>08</span>Postcards</button></li>
+        <li><button type="button" data-jump="8"><span>09</span>Travelling Russia</button></li>
+        <li><button type="button" data-jump="12"><span>13</span>You show up</button></li>
+        <li><button type="button" data-jump="14"><span>15</span>Happy Birthday</button></li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
